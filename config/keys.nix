@@ -471,13 +471,6 @@
         action = ":%sort<CR>";
         options.desc = "Sort";
       }
-
-      # Quit and save from insert mode.
-      {
-        key = "jx";
-        action = "<Esc>:x<CR>";
-        mode = "i";
-      }
     ];
   };
 }
