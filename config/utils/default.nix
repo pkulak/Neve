@@ -41,7 +41,7 @@
     harpoon.enable = lib.mkDefault true;
     markdown-preview.enable = lib.mkDefault false;
     mini.enable = lib.mkDefault true;
-    neocord.enable = lib.mkDefault true;
+    neocord.enable = lib.mkDefault false;
     neotest.enable = lib.mkDefault true;
     nvim-autopairs.enable = lib.mkDefault true;
     colorizer.enable = lib.mkDefault true;
@@ -50,12 +50,12 @@
     oil.enable = lib.mkDefault true;
     persistence.enable = lib.mkDefault true;
     plenary.enable = lib.mkDefault true;
-    project-nvim.enable = lib.mkDefault true;
+    project-nvim.enable = lib.mkDefault false;
     sidebar.enable = lib.mkDefault false;
     tmux-navigator.enable = lib.mkDefault true;
     todo-comments.enable = lib.mkDefault true;
     ultimate-autopair.enable = lib.mkDefault true;
-    undotree.enable = lib.mkDefault true;
+    undotree.enable = lib.mkDefault false;
     wakatime.enable = lib.mkDefault false;
     which-key.enable = lib.mkDefault true;
     wilder.enable = lib.mkDefault false;
