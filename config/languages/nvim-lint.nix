@@ -10,7 +10,6 @@
         c = [ "cpplint" ];
         cpp = [ "cpplint" ];
         go = [ "golangci-lint" ];
-        nix = [ "statix" ];
         lua = [ "selene" ];
         python = [ "flake8" ];
         javascript = [ "eslint_d" ];

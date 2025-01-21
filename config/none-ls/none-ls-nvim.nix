@@ -27,13 +27,9 @@
       sources = {
         code_actions = {
           gitsigns.enable = true;
-          statix.enable = true;
         };
         diagnostics = {
           checkstyle = {
-            enable = true;
-          };
-          statix = {
             enable = true;
           };
         };
