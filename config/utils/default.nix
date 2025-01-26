@@ -22,6 +22,7 @@
     ./plenary.nix
     ./project-nvim.nix
     ./sidebar.nix
+    ./snacks.nix
     ./tmux-navigator.nix
     ./todo-comments.nix
     ./ultimate-autopair.nix
@@ -42,7 +43,7 @@
     markdown-preview.enable = lib.mkDefault false;
     mini.enable = lib.mkDefault true;
     neocord.enable = lib.mkDefault false;
-    neotest.enable = lib.mkDefault true;
+    neotest.enable = lib.mkDefault false;
     nvim-autopairs.enable = lib.mkDefault true;
     colorizer.enable = lib.mkDefault true;
     nvim-surround.enable = lib.mkDefault true;
@@ -52,6 +53,7 @@
     plenary.enable = lib.mkDefault true;
     project-nvim.enable = lib.mkDefault false;
     sidebar.enable = lib.mkDefault false;
+    snacks.enable = lib.mkDefault true;
     tmux-navigator.enable = lib.mkDefault true;
     todo-comments.enable = lib.mkDefault true;
     ultimate-autopair.enable = lib.mkDefault true;

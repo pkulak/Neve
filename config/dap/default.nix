@@ -12,6 +12,6 @@
     dap.enable = lib.mkEnableOption "Enable dap module";
   };
   config = lib.mkIf config.dap.enable {
-    nvim-dap.enable = lib.mkDefault true;
+    nvim-dap.enable = lib.mkDefault false;
   };
 }
