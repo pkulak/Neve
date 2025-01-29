@@ -21,6 +21,7 @@
     ./persistence.nix
     ./plenary.nix
     ./project-nvim.nix
+    ./render-markdown.nix
     ./sidebar.nix
     ./snacks.nix
     ./tmux-navigator.nix
@@ -52,6 +53,7 @@
     persistence.enable = lib.mkDefault true;
     plenary.enable = lib.mkDefault true;
     project-nvim.enable = lib.mkDefault false;
+    render-markdown.enable = lib.mkDefault true;
     sidebar.enable = lib.mkDefault false;
     snacks.enable = lib.mkDefault true;
     tmux-navigator.enable = lib.mkDefault true;
