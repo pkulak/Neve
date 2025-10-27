@@ -46,7 +46,6 @@
           lazy = { "Plugins", "💤 " },
           TelescopePrompt = { "Telescope", "  " },
           oil = { "Oil", "󰏇 " },
-          lazygit = { "LazyGit", " " },
         },
         mode_icons = {
           ["n"] = "NORMAL",

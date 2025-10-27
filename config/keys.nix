@@ -1,5 +1,5 @@
 # Thanks for the keybinds primeagen and folke!
-{ lib, config, ... }:
+{ lib, pkgs, config, ... }:
 {
   options = {
     keys.enable = lib.mkEnableOption "Enable keys module";
@@ -456,6 +456,27 @@
         mode = "n";
         key = "<Esc>";
         action = "<cmd>nohlsearch<CR>";
+      }
+
+      # Format the whole buffer in different ways.
+      {
+        key = "=j";
+        options.silent = true;
+        action = ":%!${pkgs.jq}/bin/jq<CR>:set syntax=json<CR>";
+        options.desc = "Format as JSON";
+      }
+      {
+        key = "=x";
+        options.silent = true;
+        action =
+          ":%!${pkgs.libxml2}/bin/xmllint --format -<CR>:set syntax=xml<CR>";
+        options.desc = "Format as XML";
+      }
+      {
+        key = "=s";
+        options.silent = true;
+        action = ":%sort<CR>";
+        options.desc = "Sort";
       }
     ];
   };

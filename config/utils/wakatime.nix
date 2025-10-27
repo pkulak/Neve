@@ -5,7 +5,7 @@
   };
   config = lib.mkIf config.wakatime.enable {
     plugins.wakatime = {
-      enable = true;
+      enable = false;
     };
   };
 }
