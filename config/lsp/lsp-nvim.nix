@@ -15,6 +15,20 @@
           clangd = {
             enable = true;
           };
+          ltex = {
+            enable = true;
+            settings.ltex = {
+              language = "en-US";
+              dictionary = {
+                en-US = builtins.filter 
+                  (word: word != "" && word != null) 
+                  (lib.strings.splitString "\n" (builtins.readFile ./ltex-dictionary));
+              };
+              disabledRules = {
+                en-US = [ "UNIT_SPACE" ];
+              };
+            };
+          };
           lua_ls = {
             enable = true;
             extraOptions = {

@@ -7,7 +7,7 @@
   config = lib.mkIf config.markdown-preview.enable {
 
     plugins.markdown-preview = {
-      enable = true;
+      enable = false;
       settings = {
         browser = "firefox";
         theme = "dark";
