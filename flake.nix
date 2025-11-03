@@ -2,7 +2,9 @@
   description = "Neve is a Neovim configuration built with Nixvim, which allows you to use Nix language to manage Neovim plugins/options";
 
   inputs = {
+    nixpkgs.url = "github:nixos/nixpkgs/d7f52a7a640bc54c7bb414cca603835bf8dd4b10";
     nixvim.url = "github:nix-community/nixvim";
+    nixvim.inputs.nixpkgs.follows = "nixpkgs";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
