@@ -17,6 +17,7 @@
           };
           ltex = {
             enable = true;
+            filetypes = [ "markdown" "text" ];
             settings.ltex = {
               language = "en-US";
               dictionary = {
